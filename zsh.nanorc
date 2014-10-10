@@ -1,6 +1,6 @@
 ## Syntax highlighting for ZSH scripts (initially copied from sh.nanorc)
 syntax "zsh" "\.?zsh[^\.]+?$"
-header "^#!.*/(env +)?zsh( |$)"
+header "^#(!.*/(env +)?zsh|compdef)( |$)"
 
 ## Numbers
 color brightyellow "\b[0-9]+\b"
@@ -15,9 +15,9 @@ color green "-(eq|ne|gt|lt|ge|le|s|n|z)\>"
 ## Bash-inherited
 color brightblue "\<(alias|bindkey|builtin|cd|eval|exec|export|jobs|let|popd|pushd|set|source|typeset|umask|unset)\>"
 ## ZSH-specific
-color brightblue "\<(add-zsh-hook|autoload|compinit|echotc|emulate|print|prompt(init)?|setopt|zle|zmodload|zstyle)\>"
+color brightblue "\<(add-zsh-hook|autoload|compdef|compinit|echotc|emulate|print|prompt(init)?|setopt|unsetopt|zle|zmodload|zstyle)\>"
 ## Common linux commands
-color brightmagenta "\<(cat|chmod|chown|cp|cut|echo|env|false|find|grep|head|install|kill|less|ln|make|mkdir|mv|nice|pwd|rm|rmdir|sed|tar|true|touch|uname|wc|whoami)\>"
+color brightmagenta "\<(cat|chmod|chown|cp|curl|cut|echo|env|false|find|grep|head|install|kill|less|ln|make|mkdir|mv|nice|pwd|rm|rmdir|sed|tar|true|touch|uname|wc|whoami)\>"
 
 ## Function definition
 icolor brightgreen "^\s+?(function\s+)?[0-9A-Z_]+\s+?\(\)"
