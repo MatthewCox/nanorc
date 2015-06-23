@@ -1,5 +1,5 @@
 ## Syntax highlighting for ZSH scripts (initially copied from sh.nanorc)
-syntax "zsh" "\.?zsh[^\.]+$"
+syntax "zsh" "\.?zsh[^\.]*$"
 header "^#(!.*/(env +)?zsh|compdef)( |$)"
 
 ## Numbers
